@@ -1,36 +1,31 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * Subclase ProductoPerecedero
+ * @author Angel Angelino González
  */
 package tienda.tda;
 
-/**
- *
- * @author angel
- */
 public class ProductoPerecedero extends Producto {
 
-    private int diasParaCaducar;
+    private int diasCaducidad;
 
-    public ProductoPerecedero(String nombre, float precio, int cantidad, int diasParaCaducar) {
+    public ProductoPerecedero(String nombre, float precio, int cantidad, int diasCaducidad) {
         super(nombre, precio, cantidad);
-        this.diasParaCaducar = diasParaCaducar;
+        this.diasCaducidad = diasCaducidad;
     }
 
-    public int getDiasParaCaducar() {
-        return diasParaCaducar;
+    public int getDiasCaducidad() {
+        return diasCaducidad;
     }
 
-    public void setDiasParaCaducar(int diasParaCaducar) {
-        this.diasParaCaducar = diasParaCaducar;
+    public void setDiasCaducidad(int diasCaducidad) {
+        this.diasCaducidad = diasCaducidad;
     }
 
     public boolean estaPorCaducar() {
-        return diasParaCaducar <= 3;
-    }
-
-    @Override
-    public String toString() {
-        return super.toString() + " | Caduca en: " + diasParaCaducar + " días";
+        if (diasCaducidad <= 3) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
