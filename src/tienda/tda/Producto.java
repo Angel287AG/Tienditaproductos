@@ -1,5 +1,5 @@
 /*
- * TDA Producto
+ * TDA Producto "control de ventas e inventario en una tienda"
  * @author Angel Angelino González
  */
 package tienda.tda;
