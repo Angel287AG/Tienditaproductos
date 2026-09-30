@@ -2,6 +2,7 @@
  * Subclase ProductoPerecedero
  * @author Angel Angelino González
  */
+
 package tienda.tda;
 
 public class ProductoPerecedero extends Producto {
